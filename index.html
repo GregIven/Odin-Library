@@ -11,13 +11,39 @@
     <body>
         <div class="header-container">
             <div class="header-flexbox">
-                <h1>Library</h1>
+                <h1 class="header-title">Library</h1>
                 <button class="log-in">Log-in</button>
             </div>
         </div>
-        <div id="main-container">   
-            <div id="body-container">
-                <button class="add book"> Add Book</button>
+        <div class="main-container">   
+            <button class="btn btn-add btn-large" id="addBookBtn">Add Book</button>
+            <div class="books grid" id="booksGrid"></div>
+            <div class="input-form" id="booksForm">
+                <h3 class="add-book-btn">Add new book</h3>
+                <form class="add-book-footer" id="addBookForm">
+                    <input
+                        class="input"
+                        type="text"
+                        id="title"
+                        placeholder="title"
+                        required
+                    />
+                    <input
+                        class="input"
+                        type="text"
+                        id="title"
+                        placeholder="title"
+                        required
+                    />
+                    <input
+                        class="input"
+                        type="text"
+                        id="title"
+                        placeholder="title"
+                        required
+                    />
+                    <button class="btn btn-med submit-book-btn" id="bookSubmitBtn">Submit</button>
+                </form>
             </div>
         </div>
         

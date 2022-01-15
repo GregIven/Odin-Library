@@ -1,3 +1,5 @@
+/* Base css components */
+
 *,
 *::before,
 *::after {
@@ -11,12 +13,36 @@ html {
     min-height: 100%;
 }
 
+body {
+    background-color: #8ad1b8;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+button, input {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type='text'],
+input[type='number'] {
+    cursor: text;
+}
+
+/* HEADER */
+
 .header-container {   
     background-color: #fcc603;
+    border-bottom: 10px solid coral;
+    max-width: auto;
 }
 
 .header-flexbox {
-    max-width: 1440px;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,17 +50,66 @@ html {
     margin:0 auto;
 }
 
-#main-container {
-    background-color: #8ad1b8;
-
-    width: auto;
-    height: 100vh;
-    max-height: 110%vh;
-}
-
-#body-container {
+.header-title {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
+    color: ivory;
+    font-family: monospace;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-align: center;
 }
+
+/* MAIN */
+
+.main-container {
+    max-width: auto;
+    text-align: center;
+    align-items: center;
+    margin: 60px
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 40px;
+
+    min-height: 120px;
+}
+
+.input-form {
+    max-height: 440px;
+    margin: 60px;
+}
+
+.add-book-btn {
+    padding: 10px;
+    font-size: 40px;
+    text-align: left;
+}
+
+.add-book-footer {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* BUTTONS */
+
+.btn {
+    padding: 10px;
+    border: 4px solid chocolate;
+    font-weight: bold;
+
+}
+
+.submit-book-btn {
+    padding: 15px;
+}
+
+.btn-large {
+    padding: 15px;
+    font-size: 50px;
+}
+

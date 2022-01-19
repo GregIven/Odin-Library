@@ -3,9 +3,9 @@ const authorInput = document.getElementById("authorInput");
 const pagesInput = document.getElementById("pagesInput")
 
 const addBookBtn = document.getElementById('addBookBtn');
-const submitBookBtn = document.getElementById("bookSubmitbtn");
+const submitBookBtn = document.getElementById("bookSubmitBtn");
 
-addBookBtn.addEventListener('click', () => addBookToLibrary());
+submitBookBtn.addEventListener('click', () => addBookToLibrary());
 
 let myLibrary = [];
 

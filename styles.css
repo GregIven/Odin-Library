@@ -108,12 +108,25 @@ p1 {
     text-align: left;
 }
 
-.add-book-footer {
-    margin: 40px;
+.add-book-container {
+    border-top: 6px red solid;
+
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* flex-basis: auto; */
 }
+
+.add-book-form {
+    padding: 40px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /* BUTTONS */
 
 .btn {

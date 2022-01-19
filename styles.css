@@ -38,7 +38,7 @@ input[type='number'] {
 .header-container {   
     background-color: #fcc603;
     border-bottom: 10px solid coral;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .header-flexbox {
@@ -63,7 +63,7 @@ input[type='number'] {
 /* MAIN */
 
 .main-container {
-    max-width: auto;
+    max-width: 100%;
     text-align: center;
     align-items: center;
     margin: 60px
@@ -74,8 +74,27 @@ input[type='number'] {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 40px;
+    margin-bottom: 20px;
+    outline: rgb(8, 49, 8) solid 3px;
 
     min-height: 120px;
+}
+
+.book-card {
+    border: thin dashed #000120;
+    margin: 10px;
+    background-color: honeydew;
+
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+p1 {
+    font-family: 'Gill Sans Extrabold';
+    font-weight: 1200;
+    font-size: 25px;
 }
 
 .input-form {
